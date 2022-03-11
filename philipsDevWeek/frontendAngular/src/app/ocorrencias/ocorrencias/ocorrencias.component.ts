@@ -36,7 +36,6 @@ export class OcorrenciasComponent implements OnInit, OnDestroy {
   ngOnDestroy(): void {
     this.subscriptions.unsubscribe();
   }
-
   private listarRegioes(): void {
     const subscription = this.regiaoService.listRegiao().subscribe((regioes => {
       this.regioes = regioes;
