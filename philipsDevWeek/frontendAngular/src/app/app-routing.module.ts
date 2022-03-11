@@ -5,11 +5,11 @@ const routes: Routes = [
   {
     path: '',
     pathMatch: 'full',
-    redirectTo: 'regioes'
+    redirectTo: 'ocorrencias'
   },
   {
-    path: 'regioes',
-    loadChildren: () => import('./regioes/regioes.module').then(m => m.RegioesModule)
+    path: 'ocorrencias',
+    loadChildren: () => import('./ocorrencias/ocorrencias.module').then(m => m.OcorrenciasModule)
   }
 ];
 
